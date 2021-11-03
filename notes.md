@@ -26,8 +26,10 @@ Maybe make a base model with name, and inherit it for the other models?
 
 ## Blocks
 
-### Block 1:
+### Block 1 (Done):
 Implement models
+
+I used an abstract base class containing the name field and a `__str__` method, and the other classes inherited from it. (`EducationLevel` is empty but it is still important to tell it apart from other models for relationship purposes)
 
 ### Block 2:
 Create views and corresponding url paths
