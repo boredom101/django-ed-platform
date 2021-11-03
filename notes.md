@@ -23,3 +23,20 @@ Maybe make a base model with name, and inherit it for the other models?
   - subjects
   - subtopics
 - JSON View (What is the best way to do this?)
+
+## Blocks
+
+### Block 1:
+Implement models
+
+### Block 2:
+Create views and corresponding url paths
+
+### Block 3:
+Add templates
+
+### Block 4:
+Configure admin
+
+### Block 5:
+Test
