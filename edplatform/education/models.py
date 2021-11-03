@@ -11,7 +11,7 @@ class EducationLevel(ItemInfo):
     pass
 
 class Grade(ItemInfo):
-    level = models.ForeignKey(EducationLevel)
+    level = models.ForeignKey(EducationLevel, on_delete=models.CASCADE)
 
 class Subject(ItemInfo):
     grades = models.ManyToManyField(Grade)
