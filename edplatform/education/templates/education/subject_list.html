@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Subject List</h1>
+  {% if subject_list %}
+  <ul>
+    {% for subject in subject_list %}
+      <li>
+        {{ subject.name }}
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no subjects on the platform.</p>
+  {% endif %}
+{% endblock %}

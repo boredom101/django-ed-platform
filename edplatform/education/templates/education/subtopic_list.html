@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Subtopic List</h1>
+  {% if subtopic_list %}
+  <ul>
+    {% for subtopic in subtopic_list %}
+      <li>
+        {{ subtopic.name }}
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no subtopics on the platform.</p>
+  {% endif %}
+{% endblock %}
