@@ -10,4 +10,5 @@ urlpatterns = [
     path('subtopics/list/', views.SubtopicListView.as_view(), name='subtopics'),
     path('subtopics/create/', views.SubtopicCreateView.as_view(), name='subtopic-create'),
     path('subtopics/<int:pk>', views.SubtopicDetailView.as_view(), name='subtopic-detail'),
+    path('json', views.jsonView, name='json')
 ]
