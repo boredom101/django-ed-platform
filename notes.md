@@ -1,4 +1,5 @@
 ## Models:
+Maybe make a base model with name, and inherit it for the other models?
 - EducationLevel
   - name: CharField
 - Grade
@@ -12,12 +13,13 @@
   - subjects: ManyToManyField (Subject)
 
 ## Views:
+(Use the built-in support for form, single views and table views)
 - Add Subject
 - View Subject
 - Add Subtopic
-- View Subtopic (Include grade)
+- View Subtopic (Include grade, this would require to access a property of a property)
 - Table View:
   - grades
   - subjects
   - subtopics
-- JSON View
+- JSON View (What is the best way to do this?)
