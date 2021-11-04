@@ -21,9 +21,11 @@ class SubtopicDetailView(generic.DetailView):
 
 class SubjectCreateView(generic.CreateView):
     model = models.Subject
+    fields = '__all__'
 
 class SubtopicCreateView(generic.CreateView):
     model = models.Subtopic
+    fields = '__all__'
 
 def jsonView(request):
     data = []
