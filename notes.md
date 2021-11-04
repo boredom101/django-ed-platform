@@ -34,7 +34,7 @@ I used an abstract base class containing the name field and a `__str__` method, 
 ### Block 2 (Done):
 Create views and corresponding url paths
 
-Added views, thought there is a bit of repitition.
+Added views, though there is a bit of repitition.
 Also there is no support for secondarySubjects.
 And I am not sure about the ManyToMany support.
 
