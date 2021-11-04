@@ -3,13 +3,16 @@
 {% block content %}
   <h1>Subtopic List</h1>
   {% if subtopic_list %}
-  <ul>
+  <table>
+    <tr>
+      <td>Name</td>
+    </tr>
     {% for subtopic in subtopic_list %}
-      <li>
-        {{ subtopic.name }}
-      </li>
+      <tr>
+        <td>{{ subtopic.name }}</td>
+      </tr>
     {% endfor %}
-  </ul>
+  </table>
   {% else %}
     <p>There are no subtopics on the platform.</p>
   {% endif %}

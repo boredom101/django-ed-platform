@@ -3,13 +3,17 @@
 {% block content %}
   <h1>Grade List</h1>
   {% if grade_list %}
-  <ul>
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>Level</td>
+    </tr>
     {% for grade in grade_list %}
-      <li>
-        {{ grade.name }} ({{ grade.level.name }})
-      </li>
+      <tr>
+        <td>{{ grade.name }}</td><td>{{ grade.level.name }}</td>
+      </tr>
     {% endfor %}
-  </ul>
+  </table>
   {% else %}
     <p>There are no grades on the platform.</p>
   {% endif %}

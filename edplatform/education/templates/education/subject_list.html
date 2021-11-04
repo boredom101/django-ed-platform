@@ -3,13 +3,17 @@
 {% block content %}
   <h1>Subject List</h1>
   {% if subject_list %}
-  <ul>
+  <table>
+    <tr>
+      <td>Name</td>
+      <td># of Grades</td>
+    </tr>
     {% for subject in subject_list %}
-      <li>
-        {{ subject.name }}
-      </li>
+      <tr>
+        <td>{{ subject.name }}</td><td>{{ subject.grades.all.count }}</td>
+      </tr>
     {% endfor %}
-  </ul>
+  </table>
   {% else %}
     <p>There are no subjects on the platform.</p>
   {% endif %}
