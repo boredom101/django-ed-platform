@@ -9,7 +9,7 @@
     </tr>
     {% for subtopic in subtopic_list %}
       <tr>
-        <td>{{ subtopic.name }}</td>
+        <td><a href="{{ subtopic.get_absolute_url }}">{{ subtopic.name }}</a></td>
       </tr>
     {% endfor %}
   </table>

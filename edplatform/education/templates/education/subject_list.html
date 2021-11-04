@@ -10,7 +10,8 @@
     </tr>
     {% for subject in subject_list %}
       <tr>
-        <td>{{ subject.name }}</td><td>{{ subject.grades.all.count }}</td>
+        <td><a href="{{ subject.get_absolute_url }}">{{ subject.name }}</a></td>
+        <td>{{ subject.grades.all.count }}</td>
       </tr>
     {% endfor %}
   </table>
