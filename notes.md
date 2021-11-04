@@ -41,6 +41,8 @@ And I am not sure about the ManyToMany support.
 ### Block 3:
 Add templates
 
+Mistake: I forgot the `method` attribute of the `form` tag.
+
 ### Block 4:
 Configure admin
 

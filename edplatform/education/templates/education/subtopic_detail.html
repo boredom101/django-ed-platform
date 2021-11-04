@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Subtopic: {{ subject.name }}</h1>
+  <h2>Grades:</h2>
+  <ul>
+    {% for grade in subtopic.get_grades %}
+    <li>
+      {{ grade.name }}
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

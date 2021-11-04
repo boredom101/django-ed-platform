@@ -18,3 +18,5 @@ class Subject(ItemInfo):
 
 class Subtopic(ItemInfo):
     subjects = models.ManyToManyField(Subject)
+    def get_grades(self):
+        return Grade.objects.filter(subject__subtopic=self).distinct().order_by('id')
