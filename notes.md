@@ -43,8 +43,8 @@ Add templates
 
 Mistake: I forgot the `method` attribute of the `form` tag.
 
-### Block 4:
+### Block 4 (Done):
 Configure admin
 
-### Block 5:
+### Block 5 (Done):
 Test
