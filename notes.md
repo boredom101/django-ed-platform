@@ -38,7 +38,7 @@ Added views, though there is a bit of repitition.
 Also there is no support for secondarySubjects.
 And I am not sure about the ManyToMany support.
 
-### Block 3:
+### Block 3 (Done):
 Add templates
 
 Mistake: I forgot the `method` attribute of the `form` tag.
